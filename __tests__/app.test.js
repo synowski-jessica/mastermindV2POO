@@ -1,7 +1,8 @@
-const index = require("../index.js");
+const { GameBoard } = require("../scripts/classGameBoard");
 
-describe("secretCode", () => {
-  test("should return a secretCode composed an array with 4 propositions", () => {
-    expect(new index.SecretCode().secretCode().length).toEqual(4);
+describe("generateSecretCode", () => {
+  test("should return a secretCode composed an array with propositions", () => {
+    let play = new GameBoard(3, 12);
+    expect(play.secretCode.length).toEqual(3);
   });
 });
