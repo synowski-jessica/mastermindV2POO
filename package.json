@@ -1,16 +1,20 @@
 {
   "name": "mastermindv2poo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "scripts/classGameBoard.js",
   "devDependencies": {
     "jest": "^29.7.0"
   },
   "scripts": {
     "test": "jest",
-    "test:cov":"jest --coverage"
+    "test:cov": "jest --coverage"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "import-local": "^3.1.0",
+    "jest-cli": "^29.7.0"
+  },
+  "description": ""
 }
