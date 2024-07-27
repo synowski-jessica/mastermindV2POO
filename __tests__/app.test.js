@@ -1,4 +1,4 @@
-const { GameBoard } = require("../scripts/classGameBoard");
+const { GameBoard } = require("../scripts/class/gameBoard");
 
 describe("generateSecretCode", () => {
   test("should return a secretCode composed an array with propositions", () => {

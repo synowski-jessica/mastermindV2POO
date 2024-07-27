@@ -28,9 +28,6 @@ class GameBoard {
   }
 }
 
-let play = new GameBoard(3, 12);
-console.log(play.secretCode.length);
-
 module.exports = {
   GameBoard,
 };
