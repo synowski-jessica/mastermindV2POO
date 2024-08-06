@@ -8,29 +8,25 @@ class Player {
     this.attemptsStats = 0;
   }
 
-  makeAttempt(attempt) {
+  createAttemptFromString(attempt) {
     this.attempts.push(attempt.split(","));
     return this.attempts;
   }
 
-  updateScore() {
+  increaseScore() {
     this.score++;
-    return this.score;
   }
 
-  updateAttemptsStats() {
+  increaseAttemptsStats() {
     this.attemptsStats++;
-    return this.attemptsStats;
   }
 
   getStatPlayer() {
-    this.playerStats = (this.score / this.attemptsStats) * 100;
-    return this.playerStats;
+    return (this.score / this.attemptsStats) * 100;
   }
 
   resetAttemps() {
     this.attempts = [];
-    return this.attempts;
   }
 }
 
