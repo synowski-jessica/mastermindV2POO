@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1722952012581" clover="3.2.0">
+  <project timestamp="1722952012581" name="All files">
+    <metrics statements="34" coveredstatements="34" conditionals="4" coveredconditionals="4" methods="10" coveredmethods="10" elements="48" coveredelements="48" complexity="0" loc="34" ncloc="34" packages="1" files="3" classes="3"/>
+    <file name="feedback.js" path="C:\Users\synow\jess\ADA\exerciceIndivAda\mastermindV2POO\scripts\class\feedback.js">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="5" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="13" count="10" type="cond" truecount="2" falsecount="0"/>
+      <line num="14" count="4" type="stmt"/>
+      <line num="18" count="6" type="stmt"/>
+      <line num="19" count="30" type="cond" truecount="2" falsecount="0"/>
+      <line num="20" count="5" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+    </file>
+    <file name="gameBoard.js" path="C:\Users\synow\jess\ADA\exerciceIndivAda\mastermindV2POO\scripts\class\gameBoard.js">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="24" count="3" type="stmt"/>
+      <line num="25" count="3" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
+    </file>
+    <file name="player.js" path="C:\Users\synow\jess\ADA\exerciceIndivAda\mastermindV2POO\scripts\class\player.js">
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <line num="5" count="8" type="stmt"/>
+      <line num="6" count="8" type="stmt"/>
+      <line num="7" count="8" type="stmt"/>
+      <line num="8" count="8" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="31" count="2" type="stmt"/>
+      <line num="32" count="2" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -20,11 +20,25 @@ describe("increaseScore", () => {
   });
 });
 
+describe("increaseScore", () => {
+  test("must return true to me if the method is used", () => {
+    let player = new Player("jessica");
+    expect(player.increaseScore()).toEqual(true);
+  });
+});
+
 describe("increaseAttemptsStats", () => {
   test("must return a +1 score increment", () => {
     let player = new Player("jessica");
     player.increaseAttemptsStats();
     expect(player.attemptsStats).toEqual(1);
+  });
+});
+
+describe("increaseAttemptsStats", () => {
+  test("must return true to me if the method is used", () => {
+    let player = new Player("jessica");
+    expect(player.increaseAttemptsStats()).toEqual(true);
   });
 });
 
@@ -43,5 +57,12 @@ describe("resetAttemps", () => {
     player.createAttemptFromString("blue,red");
     player.resetAttemps();
     expect(player.attempts).toEqual([]);
+  });
+});
+
+describe("resetAttemps", () => {
+  test("must return true to me if the method is used", () => {
+    let player = new Player("jessica");
+    expect(player.resetAttemps()).toEqual(true);
   });
 });

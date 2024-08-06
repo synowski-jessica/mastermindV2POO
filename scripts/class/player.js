@@ -15,10 +15,12 @@ class Player {
 
   increaseScore() {
     this.score++;
+    return true;
   }
 
   increaseAttemptsStats() {
     this.attemptsStats++;
+    return true;
   }
 
   getStatPlayer() {
@@ -27,6 +29,7 @@ class Player {
 
   resetAttemps() {
     this.attempts = [];
+    return true;
   }
 }
 
