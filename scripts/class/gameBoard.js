@@ -5,14 +5,14 @@ class GameBoard {
     this.numberColor = numberColor;
     this.numberTry = numberTry;
     this.Balls = [
-      "Bleu",
-      "Verte",
-      "Rouge",
-      "Jaune",
-      "Violet",
-      "Orange",
-      "Rose",
-      "Marron",
+      "blue",
+      "green",
+      "red",
+      "yellow",
+      "purple",
+      "orange",
+      "pink",
+      "brown",
     ];
     this.secretCode = this.generateSecretCode();
   }
