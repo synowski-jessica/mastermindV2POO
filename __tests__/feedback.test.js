@@ -7,7 +7,7 @@ describe("checkColor", () => {
       ["blue", "red", "yellow", "green", "pink"],
       ["blue", "pink", "red", "green", "red"]
     );
-    expect(feedback.goodValue).toEqual(2);
+    expect(feedback.goodValueCount).toEqual(2);
   });
 });
 
@@ -18,6 +18,6 @@ describe("checkColor", () => {
       ["blue", "red", "yellow", "green", "pink"],
       ["blue", "pink", "red", "yellow", "green"]
     );
-    expect(feedback.badValue).toEqual(4);
+    expect(feedback.badValueCount).toEqual(4);
   });
 });
