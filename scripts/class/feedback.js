@@ -23,6 +23,16 @@ class Feedback {
       }
     }
   }
+
+  resetGoodValueCount() {
+    this.goodValueCount = 0;
+    return true;
+  }
+
+  resetBadValueCount() {
+    this.badValueCount = 0;
+    return true;
+  }
 }
 
 module.exports = {

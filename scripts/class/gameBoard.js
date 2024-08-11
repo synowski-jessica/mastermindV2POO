@@ -1,9 +1,9 @@
 // fichier classGameBoard qui correspond au plateau de jeu
 
 class GameBoard {
-  constructor(numberColor, numberTry) {
+  constructor(numberColor, numberTryGame) {
     this.numberColor = numberColor;
-    this.numberTry = numberTry;
+    this.numberTryGame = numberTryGame;
     this.Balls = [
       "blue",
       "green",
