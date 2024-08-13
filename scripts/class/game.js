@@ -1,26 +1,18 @@
 // Class Game : gère la logique principale du jeu.
 
 class Game {
-  constructor(player, secretCode, numberTryGame) {
+  constructor(player, secretCode, numberTry) {
     this.player = player;
     this.secretCode = secretCode;
     this.attemptCountPlayer = 0;
-    this.numberTryGame = numberTryGame;
+    this.numberTry = numberTry;
   }
 
-  checkGameStatus() {
-    if (this.attemptCountPlayer > this.numberTryGame) {
+  checkStatus() {
+    if (this.attemptCountPlayer > this.numberTry) {
       return false;
     } else {
       return true;
-    }
-  }
-
-  lostGame(checkGameStatus) {
-    if (checkGameStatus === false) {
-      return console.log(
-        `La partie est perdue, la combinaison secrète était: ${this.secretCode}.`
-      );
     }
   }
 

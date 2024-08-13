@@ -3,7 +3,7 @@
 const { GameBoard } = require("./scripts/class/gameBoard");
 const { Player } = require("./scripts/class/player");
 const { Game } = require("./scripts/class/game");
-const { Feedback } = require("./scripts/class/feedback");
+const { gameAttempt } = require("./scripts/class/gameAttempt");
 
 //initialisation du plateau de jeu
 const initializedGame = new GameBoard(4, 12);
@@ -15,32 +15,28 @@ console.log("code secret:" + secretCode);
 //initialisation du joueur
 const player = new Player("jessica");
 
-//initialisation de la class feedback
-const feedback = new Feedback(initializedGame.numberColor);
-
 //initialisation de la partie
-const game = new Game(player, secretCode, initializedGame.numberTryGame);
+const game = new Game(player, secretCode, initializedGame.numberTry);
 console.log(game);
-const gameStatus = game.checkGameStatus();
+const gameStatus = game.checkStatus();
 console.log("gameStatus:" + gameStatus);
 
 //tour de jeu
-while (gameStatus) {
-  const attemptPlayer = player.createAttemptFromString(
-    "blue,brown,yellow,pink"
-  );
-  console.log(attemptPlayer[0]);
+if (gameStatus) {
+  const attemptPlayer = ["blue", "brown", "yellow", "pink"];
   game.increaseAttempt();
-  feedback.checkColor(attemptPlayer[0], secretCode);
-  console.log(feedback);
-  if (feedback.goodValueCount === 4) {
+  attempt0 = gameAttempt.checkColor(
+    attemptPlayer,
+    secretCode,
+    initializedGame.numberColor
+  );
+  console.log(attempt0.goodValues);
+  if (attempt0.goodValues === 4) {
     player.increaseAttemptsStats;
     player.increaseScore();
-    return console.log("Vous avez gagné !");
+    return true;
   } else {
-    feedback.resetBadValueCount();
-    feedback.resetGoodValueCount();
     player.resetAttemps();
   }
 }
-return console.log(game.lostGame(gameStatus));
+return false;
