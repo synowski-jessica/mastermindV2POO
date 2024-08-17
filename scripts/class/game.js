@@ -9,11 +9,7 @@ class Game {
   }
 
   isGameContinue() {
-    if (this.attemptCount > this.numberTry) {
-      return false;
-    } else {
-      return true;
-    }
+    return this.attemptCount <= this.numberTry;
   }
 
   increaseAttempt() {
