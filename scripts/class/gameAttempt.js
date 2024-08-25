@@ -31,6 +31,27 @@ class gameAttempt {
 
     return { goodValues: goodValuesCount, badValues: badValuesCount };
   }
+
+  static gameTurn(
+    attemptPlayer,
+    isGameContinue,
+    secretCode,
+    initializedGameNumberColor
+  ) {
+    if (isGameContinue === true) {
+      let checkAttemptPlayer = gameAttempt.checkColor(
+        attemptPlayer,
+        secretCode,
+        initializedGameNumberColor
+      );
+
+      if (checkAttemptPlayer.goodValues === 4) {
+        return true;
+      } else {
+        return checkAttemptPlayer;
+      }
+    }
+  }
 }
 
 module.exports = {
