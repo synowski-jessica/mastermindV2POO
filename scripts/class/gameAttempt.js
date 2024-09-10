@@ -42,7 +42,7 @@ class gameAttempt {
     if (game.isGameContinue() === true) {
       let checkAttemptPlayer = gameAttempt.checkColor(
         attemptPlayer,
-        game.secretCode,
+        game.getSecretCode(),
         game.numberColor
       );
 

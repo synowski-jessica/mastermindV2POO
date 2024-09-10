@@ -3,7 +3,7 @@ const { Game } = require("../scripts/class/game");
 describe("generateSecretCode", () => {
   test("should return a secretCode composed an array with propositions", () => {
     let play = new Game("jessica", 12, 3);
-    expect(play.secretCode.length).toEqual(3);
+    expect(play.getSecretCode().length).toEqual(3);
   });
 });
 

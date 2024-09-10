@@ -1,6 +1,9 @@
 // Class Game : gère la logique principale du jeu.
 
 class Game {
+  // champs privé
+  #secretCode;
+
   constructor(player, numberTry, numberColor) {
     this.player = player;
     this.attemptCount = 0;
@@ -16,7 +19,7 @@ class Game {
       "pink",
       "brown",
     ];
-    this.secretCode = this.generateSecretCode();
+    this.#secretCode = this.generateSecretCode();
   }
 
   generateSecretCode() {
@@ -27,6 +30,15 @@ class Game {
       secretCode.push(randomColor);
     }
     return secretCode;
+  }
+
+  getSecretCode() {
+    return this.#secretCode;
+  }
+
+  //setter pour le test unitaire
+  setSecretCode(code) {
+    return (this.#secretCode = code);
   }
 
   isGameContinue() {

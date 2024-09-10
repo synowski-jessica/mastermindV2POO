@@ -9,7 +9,7 @@ const player = new Player("jessica");
 
 //initialisation de la partie
 const game = new Game(player, 12, 4);
-console.log(game);
+console.log("gameSecretCode:" + game.getSecretCode());
 
 //tour de jeu 1
 let gameTurnPlayer = gameAttempt.gameTurn(

@@ -16,7 +16,7 @@ describe("checkColor", () => {
 describe("gameTurn", () => {
   test("must perform the checkcolor method and increment attemptCount if the person has not found the correct colors in the secret code ", () => {
     let launchGame = new Game("jessica", 12, 4);
-    launchGame.secretCode = ["blue", "green", "pink", "yellow"];
+    launchGame.setSecretCode(["blue", "green", "pink", "yellow"]);
 
     expect(
       gameAttempt.gameTurn(["blue", "yellow", "green", "pink"], launchGame)
